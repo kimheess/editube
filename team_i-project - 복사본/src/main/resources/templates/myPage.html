@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>마이 페이지: 내 기본정보</title>
+  <link rel="stylesheet" href="/style/myPage.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans KR&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="headerLogo">
+        <a href="main.html">
+          <img src="/img/logo.png" href="#" alt="headerLogo" width="207" height="47">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">구인글 게시판</a></li>
+          <li><a href="#">포트폴리오</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+      <div class="account">
+        <a>##님 환영합니다.</a>
+        <a href="#">마이 페이지</a>
+        <a href="#">로그아웃</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <nav class="sideBar">
+      <ul>
+        <div class=menuPart>
+          <h2>마이 페이지</h2>
+          <li class="active"><a href="#">내 기본정보</a></li>
+          <!-- 로그인 시 회원 구분 값 저장, if문 사용 -->
+          <!-- 관리자 -->
+          <li><a href="#">회원관리</a></li>
+  
+          <!-- 유튜버
+          <li><a href="#">작성한 구인글</a></li>
+          <li><a href="#">경력 인증 요청 확인</a></li>
+          -->
+  
+          <!-- 편집자
+          <li><a href="#">지원현황 확인</a></li>
+          <li><a href="#">내 포트폴리오 보기</a></li>
+          -->
+        </div>
+        <li><a href="#" class="disable">회원탈퇴 </a></li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <h3 class="right_info">내 기본 정보</h3>
+      <form>
+        <div class=idPart>
+          <div class=idArea>
+            <span class="idText">아이디</span>
+            <div class=idInput>
+              <input type="text" placeholder="email@editube.com" id="email" class="id"
+                style="border: none; background: transparent;">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class=changepasswd onclick="location.href='changepwd.html'">비밀번호변경</button>
+
+        <div class="namePart">
+          <div class=nameArea>
+            <span class="nameText">이름</span>
+            <div class=nameInput>
+              <input type="text" placeholder="홍길동" id="name" class="name"
+                style="border: none; background: transparent;">
+            </div>
+          </div>
+        </div>
+
+        <div class="nicknamePart">
+          <div class=nicknameArea>
+            <span class="nicknameText">닉네임</span>
+            <div class=nicknameInput>
+              <input type="text" id="nick" class="nick" style="border: none; background: transparent;">
+            </div>
+          </div>
+        </div>
+
+        <div class="phonePart">
+          <div class=phoneArea>
+            <span class="phoneText">휴대전화</span>
+            <div class=phoneNumInput>
+              <input type="tel" id="phone" placeholder="010-9999-9999" class="phone"
+                style="border: none; background: transparent;">
+            </div>
+          </div>
+        </div>
+
+        <div class="addressPart">
+          <div class=addressArea>
+            <span class="addressText">주소</span>
+            <div class=addressInput>
+              <input type="text" id="address" placeholder="서울특별시 강남구 언주로 508" class="address"
+                style="border: none; background: transparent;">
+            </div>
+          </div>
+        </div>
+
+        <div class="birthPart">
+          <div class=birthArea>
+            <span class="birthText">생년월일</span>
+            <div class=birthInput>
+              <input type="date" id="birthdate" class="birthdate">
+            </div>
+          </div>
+        </div>
+        <input type="submit" value="수정완료">
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerContainer">
+      <div class="footerLogo">
+        <img src="/img/logo_white.png" alt="footerLogo">
+      </div>
+      <div class="footerInfo">
+        <p>Team_i | 팀장 : 배준영 | 팀원 : 김겸손 김경현 김희수 손주현 양서림 장준원 <br />
+          멀티캠퍼스 백엔드 개발자 취업캠프(Java) 7회차 프로젝트 1조 | github : https://github.com/Dinocabbage/team_i-project</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>비밀번호 변경</title>
+    <link rel="stylesheet" href="/style/changepwd.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans KR&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="headerLogo">
+                <a href="main.html">
+                    <img src="/img/logo.png" href="#" alt="headerLogo" width="207" height="47">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">구인글 게시판</a></li>
+                    <li><a href="#">포트폴리오</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div class="account">
+                <a>##님 환영합니다.</a>
+                <a href="#">마이 페이지</a>
+                <a href="#">로그아웃</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="changepwd">
+            <form id="changepwd" name="changepwd" method="POST">
+                <h1 class="changepwdText">비밀번호 변경</h1>
+                <div class=currentPart>
+                    <div class=currentArea>
+                        <span class="currentText">현재 비밀번호</span>
+                        <div class=currentInput>
+                            <input type="password" placeholder="••••••••" id="current"
+                                style="border: none; background: transparent;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class=newPart>
+                    <div class=newArea>
+                        <span class="newText">새 비밀번호</span>
+                        <span class="newInput">
+                            <input type="password" placeholder="••••••••" id="newpwd"
+                                style="border: none; background: transparent;"></span>
+                    </div>
+                </div>
+
+                <div class=renewPart>
+                    <div class=renewArea>
+                        <span class="renewText">새 비밀번호 확인</span>
+                        <span class="renewInput"><input type="password" placeholder="••••••••" id="renewpwd"
+                                style="border: none; background: transparent;"></span>
+                    </div>
+                </div>
+                <button type="submit" class=loginButton>변경하기</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerLogo">
+                <img src="/img/logo_white.png" alt="footerLogo">
+            </div>
+            <div class="footerInfo">
+                <p>Team_i | 팀장 : 배준영 | 팀원 : 김겸손 김경현 김희수 손주현 양서림 장준원 <br />
+                    멀티캠퍼스 백엔드 개발자 취업캠프(Java) 7회차 프로젝트 1조 | github : https://github.com/Dinocabbage/team_i-project</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

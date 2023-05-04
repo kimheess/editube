@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>마이 페이지: 회원탈퇴</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/disableAccount.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="headerLogo">
+        <a href="main.html">
+          <img src="/img/logo.png" href="#" alt="headerLogo" width="207" height="47">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">구인글 게시판</a></li>
+          <li><a href="#">포트폴리오</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+      <div class="account">
+        <a>##님 환영합니다.</a>
+        <a href="#">마이 페이지</a>
+        <a href="#">로그아웃</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <nav class="sideBar">
+      <ul>
+
+        <div class=menuPart>
+          <h2>마이 페이지</h2>
+          <li><a href="#">내 기본정보</a></li>
+          <!-- 로그인 시 회원 구분 값 저장, if문 사용 -->
+          <!-- 관리자 -->
+          <li><a href="#">회원관리</a></li>
+
+          <!-- 유튜버
+          <li><a href="#">작성한 구인글</a></li>
+          <li><a href="#">경력 인증 요청 확인</a></li>
+          -->
+
+          <!-- 편집자
+          <li><a href="#">지원현황 확인</a></li>
+          <li><a href="#">내 포트폴리오 보기</a></li>
+          -->
+
+        </div>
+        <li class="active"><a href="#" class="disable">회원탈퇴 </a></li>
+      </ul>
+    </nav>
+
+    <div class="main">
+      <h3 class="right_info">회원탈퇴</h3>
+
+      <div class="container">
+        <textarea class="textbox" placeholder="텍스트를 입력하세요"></textarea>
+        <div class="checkbox">
+          <input type="checkbox" id="agree" name="agree">
+          <label for="agree">동의합니다</label>
+        </div>
+      </div>
+
+
+      <div class="passwdcheck">
+        <div class=currentPart>
+          <div class=currentArea>
+            <span class="currentText">비밀번호</span>
+            <div class=currentInput>
+              <input type="password" placeholder="••••••••" id="current" style="border: none; background: transparent;">
+            </div>
+          </div>
+        </div>
+
+        <div class=recurrentPart>
+          <div class=recurrentArea>
+            <span class="recurrentText">비밀번호 재입력</span>
+            <div class=recurrentInput>
+              <input type="password" placeholder="••••••••" id="recurrent"
+                style="border: none; background: transparent;">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class=disableAccount>탈퇴하기</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footerContainer">
+      <div class="footerLogo">
+        <img src="/img/logo_white.png" alt="footerLogo">
+      </div>
+      <div class="footerInfo">
+        <p>Team_i | 팀장 : 배준영 | 팀원 : 김겸손 김경현 김희수 손주현 양서림 장준원 <br />
+          멀티캠퍼스 백엔드 개발자 취업캠프(Java) 7회차 프로젝트 1조 | github : https://github.com/Dinocabbage/team_i-project</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

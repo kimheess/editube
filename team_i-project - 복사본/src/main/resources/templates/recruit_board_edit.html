@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>구인글 게시판: 게시물 작성</title>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans KR&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style/recruit_board_edit.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="headerLogo">
+        <a href="main.html">
+          <img src="/img/logo.png" href="#" alt="headerLogo" width="207" height="47">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">구인글 게시판</a></li>
+          <li><a href="#">포트폴리오</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+      <div class="account">
+        <a>##님 환영합니다.</a>
+        <a href="#">마이 페이지</a>
+        <a href="#">로그아웃</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="job">
+      <form id="signupForm" name="signupForm" method="POST">
+        <div>
+          <h1>제목 : <input type="text" placeholder="제목을 입력하세요" id=""></h1>
+        </div>
+        <hr>
+        <div>
+          유튜버 정보 들어가는 칸 (이미지/채널명/인증마크)
+        </div>
+        <div>
+          마감일 : <input type="date" name="Deadline"><br>
+          직무 : <input type="text" placeholder="직무를 입력 하세요"><br>
+          급여 상세 : <input type="number" placeholder="급여 상세를 입력 하세요"><br>
+          우대 사항 : <input type="text" placeholder="우대 사항을 입력 하세요"><br>
+          <span class="titleText">편집 툴 : </span>
+          <span class="inputBox">
+            <label><input type="radio" name="editor"> 프리미어 프로</label>
+            <label><input type="radio" name="editor"> 애프터 이펙트</label>
+            <label><input type="radio" name="editor"> 베가스</label>
+            <label><input type="radio" name="editor"> 파이널 컷</label>
+            <label><input type="radio" name="editor"> 파워 디렉터</label>
+            <label><input type="radio" name="editor"> 포토샵</label><br>
+            <label><input type="radio" name="editor"> 일러스트레이터</label>
+            <label><input type="radio" name="editor"> MaYa</label>
+            <label><input type="radio" name="editor"> Blender</label>
+          </span><br>
+          근무 환경 : <input type="text" placeholder="근무 환경을 입력 하세요"><br>
+          복리 후생 : <input class="input1" type="text" placeholder="복리 후생을 입력 하세요"><br>
+          상세 모집 내용 : <input class="input2" type="text" placeholder="상세 모집 내용을 입력 하세요"><br>
+        </div>
+        <br>
+        <div>
+          Orginal Video link or Channel link <br>
+          <input type="text" placeholder="링크를 입력하세요">
+        </div>
+
+        <button class="btn">작성완료</button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footerContainer">
+      <div class="footerLogo">
+        <img src="/img/logo_white.png" alt="footerLogo">
+      </div>
+      <div class="footerInfo">
+        <p>Team_i | 팀장 : 배준영 | 팀원 : 김겸손 김경현 김희수 손주현 양서림 장준원 <br />
+          멀티캠퍼스 백엔드 개발자 취업캠프(Java) 7회차 프로젝트 1조 | github : https://github.com/Dinocabbage/team_i-project</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

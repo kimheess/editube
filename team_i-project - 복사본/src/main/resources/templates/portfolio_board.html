@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/style/portfolio_board.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans KR&display=swap" rel="stylesheet">
+    <title>포트폴리오 게시판</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="headerLogo">
+                <a href="main.html">
+                    <img src="/img/logo.png" href="#" alt="headerLogo" width="207" height="47">
+                </a>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">구인글 게시판</a></li>
+                    <li><a href="#">포트폴리오</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div class="account">
+                <a>##님 환영합니다.</a>
+                <a href="#">마이 페이지</a>
+                <a href="#">로그아웃</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="board_list_wrap">
+            <h1><input class="search" placeholder="검색어를 입력하세요"></h1>
+            <hr />
+            <div>· 총 영상물 시간 : <input type="number" class="search1" placeholder="구독자 수를 입력하세요"></div>
+            <div>· 근무 가능 지역 : <input class="search2" placeholder="근무 가능 지역을 검색하세요">
+                <label for="maya">재택 근무</label>
+                <input type="checkbox" name="editing-tools" id="maya">
+            </div>
+            <div class="filters">
+                <b>· 편집 툴 : </b>
+                <label for="premier-pro">프리미어 프로</label>
+                <input type="checkbox" name="editing-tools" id="premier-pro">
+                <label for="after-effects">애프터 이펙트</label>
+                <input type="checkbox" name="editing-tools" id="after-effects">
+                <label for="vegas">베가스</label>
+                <input type="checkbox" name="editing-tools" id="vegas">
+                <label for="final-cut">파이널 컷</label>
+                <input type="checkbox" name="editing-tools" id="final-cut">
+                <label for="power-director">파워디렉터</label>
+                <input type="checkbox" name="editing-tools" id="power-director">
+                <label for="photoshop">포토샵</label>
+                <input type="checkbox" name="editing-tools" id="photoshop">
+                <label for="illustrator">일러스트</label>
+                <input type="checkbox" name="editing-tools" id="illustrator">
+                <label for="maya">MaYa</label>
+                <input type="checkbox" name="editing-tools" id="maya">
+                <label for="blender">Blender</label>
+                <input type="checkbox" name="editing-tools" id="blender">
+            </div>
+            <hr />
+            <table class="board_list">
+
+                <caption>게시판 목록</caption>
+                <thead>
+                    <tr>
+                        <th>제목</th>
+                        <th>닉네임</th>
+                        <th>총 영상물 시간</th>
+                        <th>편집툴</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tit">꾸준함으로 보답하겠습니다</td>
+                        <td>김겸손</td>
+                        <td>9시간30분</td>
+                        <td>프리미어 프로</td>
+                    </tr>
+                    <tr>
+                        <td class="tit">하루 24시간을 3분할로 쪼게서 하겠습니다</td>
+                        <td>김겸손</td>
+                        <td>9시간30분</td>
+                        <td>프리미어 프로</td>
+                    </tr>
+                    <tr>
+                        <td class="tit">제발 제발 제발 일만 시켜주세요</td>
+                        <td>김겸손</td>
+                        <td>9시간30분</td>
+                        <td>프리미어 프로</td>
+                    </tr>
+                    <tr>
+                        <td class="tit">시켜만 주신다면 열심히 하겠습니다</td>
+                        <td>김겸손</td>
+                        <td>9시간30분</td>
+                        <td>프리미어 프로</td>
+                    </tr>
+                    <tr>
+                        <td class="tit">신의 깃든 편집 편집몬스터입니다</td>
+                        <td>김겸손</td>
+                        <td>9시간30분</td>
+                        <td>프리미어 프로</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paging">
+                <a href="#" class="bt"><</a>
+                        <a href="#" class="num on">1</a>
+                        <a href="#" class="num">2</a>
+                        <a href="#" class="num">3</a>
+                        <a href="#" class="bt">></a>
+            </div>
+            <div class="paging1">
+                <a href="#" class="bt">내 포트폴리오 공개</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="footerLogo">
+                <img src="/img/logo_white.png" alt="footerLogo">
+            </div>
+            <div class="footerInfo">
+                <p>Team_i | 팀장 : 배준영 | 팀원 : 김겸손 김경현 김희수 손주현 양서림 장준원 <br />
+                    멀티캠퍼스 백엔드 개발자 취업캠프(Java) 7회차 프로젝트 1조 | github : https://github.com/Dinocabbage/team_i-project</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입: 편집자</title>
+  <link rel="stylesheet" href="/style/signup-editor.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans KR&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="headerLogo">
+        <a href="main.html">
+          <img src="/img/logo.png" href="#" alt="headerLogo" width="207" height="47">
+        </a>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="#">구인글 게시판</a></li>
+          <li><a href="#">포트폴리오</a></li>
+          <li><a href="#">고객센터</a></li>
+        </ul>
+      </nav>
+      <div class="account">
+        <a href="#">회원가입</a>
+        <a href="#">로그인</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <form id="signupForm" name="signupForm" method="POST">
+      <h1 class="signup-title">편집자 회원가입</h1>
+      <div class="signup-part">
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">아이디</span>
+            <span class=inputBox>
+              <input type="text" placeholder="email@editube.com" id="email" class="inputValue">
+            </span>
+          </div>
+        </div>
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">비밀번호</span>
+            <span class="inputBox"><input type="password" placeholder="••••••••" id="password" class="inputValue">
+            </span>
+          </div>
+        </div>
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">이름</span>
+            <span class="inputBox"><input type="text" placeholder="이름을 입력하세요" id="name" class="inputValue">
+            </span>
+          </div>
+        </div>
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">닉네임</span>
+            <span class="inputBox"><input type="text" placeholder="닉네임을 입력하세요" id="nickname" class="inputValue">
+            </span>
+          </div>
+        </div>
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">성별</span>
+            <span class="inputBox">
+              <label><input type="radio" name="gender" value="남"> 남성</label>&nbsp;&nbsp;&nbsp;
+              <label><input type="radio" name="gender" value="여"> 여성</label>
+            </span>
+          </div>
+        </div>
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">핸드폰 번호</span>
+            <span class="inputBox"><input type="text" placeholder="010-0000-0000" id="phoneNumber" class="inputValue">
+            </span>
+          </div>
+        </div>
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">도로명 주소</span>
+            <span class="inputBox"><input type="text" placeholder="도로명 주소를 입력하세요" id="address" class="inputValue">
+            </span>
+          </div>
+        </div>
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">상세 주소</span>
+            <span class="inputBox"><input type="text" placeholder="상세 주소를 입력하세요" id="detailAddr" class="inputValue">
+            </span>
+          </div>
+        </div>
+        <div class=box>
+          <div class=totalBox>
+            <span class="titleText">생년월일</span>
+            <span class="inputBox"><input type="date" id="birthdate" class="signup-birthdate">
+            </span>
+          </div>
+        </div>
+        <button type="submit" class=signUpButton>회원가입</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="footerContainer">
+      <div class="footerLogo">
+        <img src="/img/logo_white.png" alt="footerLogo">
+      </div>
+      <div class="footerInfo">
+        <p>Team_i | 팀장 : 배준영 | 팀원 : 김겸손 김경현 김희수 손주현 양서림 장준원 <br />
+          멀티캠퍼스 백엔드 개발자 취업캠프(Java) 7회차 프로젝트 1조 | github : https://github.com/Dinocabbage/team_i-project</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

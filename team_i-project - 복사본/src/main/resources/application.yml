@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+
+mygoogle:
+  clientid: 571817488080-c2gg7o1udb56itconj83t86bv8nn2sau.apps.googleusercontent.com
+  clientsecret: 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
+  clientredirect: http://localhost:8080/oauth/login/redirect
+  authurl: https://oauth2.googleapis.com
+  loginurl : https://accounts.google.com
+  scope: profile,email,openid
+  clientredirectyoutube: http://localhost:8080/oauth/youtube/redirect
+  apiKey: AIzaSyBeXBspKOYvU13kgDawlVsBXNHIAbdxSoE
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: scott
+    password: tiger
+    driver-class-name: oracle.jdbc.driver.OracleDriver
