@@ -18,3 +18,35 @@
 //        // page위치에 있는 값은 0부터 시작
 //        Page<Member> boardEntities = memberRepository.findAll(PageRequest.of(page,pageLimit,Sort.by(Sort.Direction.DESC,"email")));
 //    }
+
+  
+  
+  SELECT * FROM(
+    SELECT ROWNUM NUM, N.* FROM (
+        SELECT * FROM USER_INFO ORDER BY register_date DESC
+    ) N
+)
+WHERE NUM BETWEEN 11 AND 20; 
+  
+  //    String sql = "SELECT * FROM (SELECT ROWNUM NUM, N.* FROM (SELECT * FROM USER_INFO ORDER BY register_date DESC) N) WHERE NUM BETWEEN ? AND ?";
+//    int pageStart = 1; // Start of the page
+//    int pageSize = 10; // Number of records to retrieve
+//    int pageEnd = pageStart + pageSize - 1; // End of the page
+  
+  @GetMapping("/users")
+public String getUsersPage(@RequestParam(defaultValue = "1") int page, Model model) {
+    int pageSize = 10; // Number of records to retrieve per page
+    int pageStart = (page - 1) * pageSize + 1; // Start of the page
+    int pageEnd = pageStart + pageSize - 1; // End of the page
+
+    List<UserInfo> users = userService.getUsers(pageStart, pageEnd);
+
+    int totalUsers = userService.getTotalUsers(); // Total number of users
+    int totalPages = (int) Math.ceil((double) totalUsers / pageSize); // Total number of pages
+
+    model.addAttribute("users", users);
+    model.addAttribute("currentPage", page);
+    model.addAttribute("totalPages", totalPages);
+
+    return "users";
+}
