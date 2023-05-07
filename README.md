@@ -50,3 +50,5 @@ public String getUsersPage(@RequestParam(defaultValue = "1") int page, Model mod
 
     return "users";
 }
+
+![image](https://user-images.githubusercontent.com/122075060/236695601-a75e0ecf-face-425e-a444-8a0bdcba4ec8.png)
