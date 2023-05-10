@@ -62,6 +62,6 @@ public String getUsersPage(@RequestParam(defaultValue = "1") int page, Model mod
   포트폴리오 게시판 
   구현.,,.,.,.,.,.
   
-  게시글 조회 구현 완료 
+  게시글 조회 구현 완료  (queryForObject)
   회원 조회 - 조회,검색,삭제,삭제한 데이터 저장
 
