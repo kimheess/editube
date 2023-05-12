@@ -66,3 +66,4 @@ public String getUsersPage(@RequestParam(defaultValue = "1") int page, Model mod
   회원 조회 - 조회,검색,삭제,삭제한 데이터 저장
   게시글 삭제 구현 완료 
   th:if 사용 해보기 완료 
+  session, RedirectAttributes 사용 해보기 
